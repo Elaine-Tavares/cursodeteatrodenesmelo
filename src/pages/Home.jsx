@@ -33,7 +33,7 @@ export default function Home(){
           </div>
 
           <section className={styles.secao_frase_de_efeito}>
-            <h3 data-aos="fade-left">O teatro é a escola para a vida, trabalha todo o desenvolvimento do ser humano. Por isso existe um provérbio que diz que o mundo é um teatro.</h3>
+            <h3 data-aos="fade-up">O teatro é a escola para a vida, trabalha todo o desenvolvimento do ser humano. Por isso existe um provérbio que diz que o mundo é um teatro.</h3>
           </section>
 
           <div >
