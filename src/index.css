@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    color:  #0F0F0F ;
+}
+
+h1, h3{
+    /* border: 1px solid red; */
+    text-align: center;
+    font-size: 1.5rem; /*24px*/
+    height: 60px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 1rem;  /*(14px)*/
+}
+
+
+@media (min-width: 480px) {/* celularesmaiores */
+    h1, h3{
+        font-size: 1.75rem; /*(28px)*/
+        margin-bottom: 20px;
+    }
+
+    p{
+        font-size: 1.2rem; /*(16px)*/
+    }
+}
+
+@media (min-width: 768px) {/* tablets */
+    h1, h3{
+    font-size: 2rem; /*(32px)*/
+    margin-bottom: 30px;
+    }  
+}
+
+@media (min-width: 1024px) {/* notebooks */
+    h1, h3{
+    font-size: 2.5rem; /*(40px)*/
+    margin-bottom: 50px;
+    }
+
+    p{
+    font-size: 1.125rem; /*(18px)*/
+    }
+}
+
+@media (min-width: 1280px) {/* desktops grandes */
+     h1, h3{
+    font-size: 3rem; /*(48px)*/
+      margin-bottom: 70px;
+    }
+
+    p{
+    font-size: 1.25rem; /*(20px)*/
+    }
+}
