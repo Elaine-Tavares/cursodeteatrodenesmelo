@@ -17,7 +17,7 @@ export default function Navbar() {
     return(
         <header className={styles.header}>
             <nav className={styles.navbar}>
-                <a href="#"><img  className={styles.logo} src={logo} alt="Logo do site" /></a>
+                <a href="/"><img  className={styles.logo} src={logo} alt="Logo do site" /></a>
                
                 <div className={styles.container_menu_mobile}>
                     <GiHamburgerMenu 
@@ -35,13 +35,13 @@ export default function Navbar() {
                                 onClick={handleMenu}
                          />
                         <li>
-                          <a href="#" className={styles.btn}>Sobre o Prof. Denes Melo</ a>
+                          <a href="#home" className={styles.btn}>Sobre o Prof. Denes Melo</ a>
                         </li>
                         <li>
-                          <a href="#" className={styles.btn}>Galeria de Fotos</a>
+                          <a href="#galeria" className={styles.btn}>Galeria de Fotos</a>
                         </li>
                         <li>
-                          <a href="#" className={styles.btn}>Contato</a>
+                          <a href="#contato" className={styles.btn}>Contato</a>
                         </li>
                       </ul> 
                     </div>
@@ -50,13 +50,13 @@ export default function Navbar() {
                 <div className={styles.container_menu_desktop}>
                     <ul>     
                       <li>
-                        <a href="#" className={styles.btn}>SOBRE O PROF. DENES MELO</ a>
+                        <a href="#home" className={styles.btn}>SOBRE O PROF. DENES MELO</ a>
                       </li>
                       <li>
-                        <a href="#" className={styles.btn}>Galeria de Fotos</a>
+                        <a href="#galeria" className={styles.btn}>Galeria de Fotos</a>
                       </li>
                       <li>
-                        <a href="#" className={styles.btn}>Contato</a>
+                        <a href="#contato" className={styles.btn}>Contato</a>
                       </li>  
                     </ul> 
                 </div>

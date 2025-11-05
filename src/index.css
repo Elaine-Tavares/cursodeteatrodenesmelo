@@ -10,12 +10,13 @@ body{
     font-family: "Poppins", sans-serif;
     background-color: #fff;
     color:  #0F0F0F ;
+    scroll-behavior: smooth;
 }
 
 h1, h3{
     /* border: 1px solid red; */
     text-align: center;
-    font-size: 1.5rem; /*24px*/
+    font-size: 1.3rem; /*24px*/
     height: 60px;
     margin-top: 10px;
 }

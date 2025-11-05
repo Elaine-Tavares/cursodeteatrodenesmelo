@@ -3,7 +3,7 @@
   padding: 5%;
   width: 100%;
   max-width: 1024px;
-  margin: 130px auto;
+  margin-inline: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,6 +19,8 @@
   display: flex;
   flex-flow: column;
   gap: 40px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid red;
 }
 
 .container_main_swiper{
@@ -35,15 +37,112 @@
 }
 
 .secao_frase_de_efeito{
-  /* border: 2px solid red; */
-  text-align: center;
   padding-block: 50px;
+  text-align: center;
+  border-bottom: 2px solid red;
 }
 
-.secao_frase_de_efeito h3{
+.secao_frase_de_efeito h2{
   color: red;
   font-size: 1.8rem;
 }
+
+.secao_galeria{
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.secao_logo{
+    width: 100%;
+    padding: 50px;
+    margin: 0;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #007bff, #eb6060, #007bff);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+}
+
+.container_logo{
+   animation: float 4s ease-in-out infinite;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: column;
+}
+
+.container_logo img{
+  width: 100%;
+  max-width: 480px;
+}
+
+
+.container_logo a{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.whats{
+  color: green;
+  transform: scale(2);
+}
+
+.secao_funcionamento{
+  border-block: 2px solid red;
+  width: 100%;
+  padding-block: 50px;
+  margin-top: 50px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_funcionamento{
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  background-color: #ededff;
+}
+
+.container_funcionamento h4{
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+  /* Animação do gradiente */
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Animação de subir e descer */
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+
+
+@media(min-width: 768px){
+  .secao_galeria{
+  width: 100%;
+  margin-top: 50px;
+}
+  
+}
+
 
 
 
