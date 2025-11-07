@@ -22,10 +22,13 @@ import foto21 from '/componente_galeria/Galeria_1/46.jpeg'
 
 import logo from '/logo_cursodeteatrodenesmelo.webp'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 import styles from './Album.module.css'
 import { Link } from 'react-router-dom'
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Album1(){
     const fotos = [foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9, foto10, foto11, foto12, foto13, foto14, foto15, foto16, foto17, foto18, foto19, foto20, foto21]
@@ -46,6 +49,13 @@ export default function Album1(){
          setIsOpen(!isOpen)   
     }
 
+    useEffect(() => {
+              AOS.init({
+                duration: 1000, // duração da animação (em ms)
+                once: false, // se a animação deve acontecer só uma vez
+              });
+          }, []);
+
     return(
         <>
          <header className={styles.header}>
@@ -54,7 +64,7 @@ export default function Album1(){
                     <Link to="/" className={styles.btn}>Home</Link>
                 </nav>
             </header>
-                  <main className={styles.page_album}>
+                  <main className={styles.page_album} data-aos="fade-right">
             <h1>Álbum 1</h1>
             <div className={styles.container_page_album}>
                 {fotos.map((foto) => 
