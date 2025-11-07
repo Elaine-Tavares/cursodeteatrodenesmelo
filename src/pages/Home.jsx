@@ -6,6 +6,8 @@ import { RiWhatsappFill } from "react-icons/ri";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+import Navbar from '../components/navbar/Navbar'
 import { useEffect } from 'react';
 
 import styles from './Home.module.css'
@@ -19,13 +21,15 @@ export default function Home(){
       }, []);
 
       return(
+        <>
+        <Navbar/>
         <main className={styles.page_home} id="home" data-aos="fade-right">
           <h1 >Teatro, escola para a vida!</h1>
           <div className={styles.container_main}>
             <div className={styles.container_main_swiper}>
                 <ComponentSwiper/>
             </div>
-            <div className={styles.container_main_text} data-aos="fade-up">
+            <div className={styles.container_main_text}>
               <h2>SOBRE O PROF. DENES MELO:</h2>
               <p>Denes Melo é Professor, Autor, Ator e Diretor de teatro, Locutor, Jornalista. Credenciado ao Sindicado dos Artistas RJ SATED RJ e ao Sindicato dos Radialistas RJ SINRADTV RJ</p>
               <p>Denes Melo iniciou no teatro com 17 anos no ano de 2000 e começou a ministrar aula em 2002 para crianças e depois para adultos. Com mais de 10 peças de teatro entre elas O auto da Compadecida de Ariano Suassuna, Marido fiel para sempre de Nelson Rodrigues adaptação de Denes Melo Idéias de canários de Machado de Assis.
@@ -37,11 +41,13 @@ export default function Home(){
           <section className={styles.secao_frase_de_efeito}>
             <h2 data-aos="fade-right">O teatro é a escola para a vida, trabalha todo o desenvolvimento do ser humano. Por isso existe um provérbio que diz que o mundo é um teatro.</h2>
           </section>
-          <section className={styles.secao_galeria} id="galeria" data-aos="fade-up">
+
+          <div id="galeria"/>
+          <section className={styles.secao_galeria}  data-aos="fade-up">
             <Galeria/>
           </section>
 
-          <section className={styles.secao_logo}>
+          <section className={styles.secao_logo} id="contato" >
             <div className={styles.container_logo}>
                 <img src={logo} alt="" />
                 <p>TEL: (21) 3183-2757</p>
@@ -53,7 +59,7 @@ export default function Home(){
             </div>   
           </section>
 
-          <section className={styles.secao_funcionamento} id="contato" >
+          <section className={styles.secao_funcionamento}>
             <div className={styles.container_funcionamento}>
               <h4 >Endereços e horários:</h4>
               <p>
@@ -69,5 +75,6 @@ export default function Home(){
             </div>
           </section>
         </main>   
+        </>
     )
 }

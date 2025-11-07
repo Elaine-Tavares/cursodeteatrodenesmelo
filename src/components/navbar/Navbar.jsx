@@ -6,6 +6,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import logo from '/logo_cursodeteatrodenesmelo.webp'
 
 import styles from  './Navbar.module.css'
+import { Link } from "react-router-dom";
+
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,11 +15,11 @@ export default function Navbar() {
   function handleMenu() {
     setIsOpen(!isOpen);
   }
- 
+
     return(
         <header className={styles.header}>
             <nav className={styles.navbar}>
-                <a href="/"><img  className={styles.logo} src={logo} alt="Logo do site" /></a>
+                <Link to="/"><img  className={styles.logo} src={logo} alt="Logo do site" /></Link>
                
                 <div className={styles.container_menu_mobile}>
                     <GiHamburgerMenu 
@@ -35,7 +37,7 @@ export default function Navbar() {
                                 onClick={handleMenu}
                          />
                         <li>
-                          <a href="#home" className={styles.btn}>Sobre o Prof. Denes Melo</ a>
+                          <a href="#home" className={styles.btn}>Sobre o Prof. Denes Melo</a>
                         </li>
                         <li>
                           <a href="#galeria" className={styles.btn}>Galeria de Fotos</a>
@@ -50,7 +52,7 @@ export default function Navbar() {
                 <div className={styles.container_menu_desktop}>
                     <ul>     
                       <li>
-                        <a href="#home" className={styles.btn}>SOBRE O PROF. DENES MELO</ a>
+                        <a href="#home" className={styles.btn}>SOBRE O PROF. DENES MELO</a>
                       </li>
                       <li>
                         <a href="#galeria" className={styles.btn}>Galeria de Fotos</a>
