@@ -5,6 +5,7 @@ import foto4 from '/componente_galeria/Galeria_3/39.jpeg'
 import foto5 from '/componente_galeria/Galeria_3/41.jpeg'
 import foto6 from '/componente_galeria/Galeria_3/44.jpeg'
 import foto7 from '/componente_galeria/Galeria_3/45.jpeg'
+import foto8 from '/componente_galeria/Galeria_3/46.webp'
 
 
 import logo from '/logo_cursodeteatrodenesmelo.webp'
@@ -18,13 +19,13 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function Album3(){
-    const fotos = [foto1, foto2, foto3, foto4, foto5, foto6, foto7]
+    const fotos = [foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8]
 
     const[isOpen, setIsOpen] = useState(false)
     const [fotoSelecionada, setFotoSelecionada] = useState("")
 
     function abrirFoto(foto){
-        if(fotos.map((foto) => foto== foto)){
+        if(fotos.map((foto) => foto == foto)){
             console.log("foto encontrada", foto)
             setFotoSelecionada(foto)  
             setIsOpen(!isOpen)    

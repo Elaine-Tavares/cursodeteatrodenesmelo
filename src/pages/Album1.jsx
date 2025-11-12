@@ -19,6 +19,7 @@ import foto18 from '/componente_galeria/Galeria_1/40.jpeg'
 import foto19 from '/componente_galeria/Galeria_1/42.jpeg'
 import foto20 from '/componente_galeria/Galeria_1/43.jpeg'
 import foto21 from '/componente_galeria/Galeria_1/46.jpeg'
+import foto22 from '/componente_galeria/Galeria_1/47.webp'
 
 import logo from '/logo_cursodeteatrodenesmelo.webp'
 
@@ -31,7 +32,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export default function Album1(){
-    const fotos = [foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9, foto10, foto11, foto12, foto13, foto14, foto15, foto16, foto17, foto18, foto19, foto20, foto21]
+    const fotos = [foto1, foto2, foto3, foto4, foto5, foto6, foto7, foto8, foto9, foto10, foto11, foto12, foto13, foto14, foto15, foto16, foto17, foto18, foto19, foto20, foto21, foto22]
 
     const[isOpen, setIsOpen] = useState(false)
     const [fotoSelecionada, setFotoSelecionada] = useState("")

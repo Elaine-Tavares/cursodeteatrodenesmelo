@@ -19,7 +19,7 @@ export default function Footer() {
                 title="Enviar e-mail para Denes Melo" 
                 >
                <MdEmail className={styles.email}/>
-              <span>E-mail Denes Melo</span>
+              <span>cursodeteatrodenesmelo@gmail.com</span>
               </a>
             <a
               href="#"
@@ -38,7 +38,7 @@ export default function Footer() {
               title="Acessar Instagram de Denes Melo"
             >
               <FaSquareInstagram className={styles.instagram}/>
-              <span>Instagram Denes Melo</span>
+              <span>https://www.instagram.com/cursodeteatrodenesmelo/</span>
             </a>
             <a
               href="#"
@@ -47,7 +47,7 @@ export default function Footer() {
                title="Acessar YouTube de Denes Melo"
             >
                 <FaYoutube className={styles.youtube}/>
-                <span>YouTube Denes Melo</span>
+                <span>https://www.youtube.com/@cursodeteatrodenesmelo</span>
             </a>
               </nav>
             <p style={{alignSelf: "center", marginTop: "15px", fontWeight: "bold"}}>Prof. Denes Melo ©{anoAtual}</p>    
