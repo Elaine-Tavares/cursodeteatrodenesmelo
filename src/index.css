@@ -11,6 +11,7 @@ body{
     background-color: #fff;
     color:  #0F0F0F ;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 h1, h3{

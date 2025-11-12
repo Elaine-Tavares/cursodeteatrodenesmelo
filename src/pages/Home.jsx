@@ -75,6 +75,15 @@ export default function Home(){
             </div>
           </section>
         </main>   
-        </>
+           <a
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Enviar whats para Denes Melo"
+          
+        >
+          <RiWhatsappFill className={styles.whats_fixed}/>
+        </a>
+      </>
     )
 }
