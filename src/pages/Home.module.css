@@ -132,6 +132,11 @@
 
 }
 
+.secao_videos{
+  padding-bottom: 50px;
+  border-bottom: 2px solid red;
+}
+
   /* Animação do gradiente */
   @keyframes gradientMove {
     0% { background-position: 0% 50%; }

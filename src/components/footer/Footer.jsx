@@ -13,7 +13,7 @@ export default function Footer() {
           <div className={styles.info}>
             <nav className={styles.links} aria-label="Links para redes sociais">
               <a
-                href="#"
+                href="mailto:cursodeteatrodenesmelo@gmail.com?subject=Informações&body=Olá professor, gostaria de informações sobre as aulas de teatro."
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Enviar e-mail para Denes Melo" 
@@ -22,26 +22,25 @@ export default function Footer() {
               <span>cursodeteatrodenesmelo@gmail.com</span>
               </a>
             <a
-              href="#"
+              href="https://w.app/nntyld"
               target="_blank"
               rel="noopener noreferrer"
               title="Enviar whats para Denes Melo"
-              
             >
               <RiWhatsappFill className={styles.whats}/>
               <span>(21) 98299-6612</span>
             </a>
             <a
-              href="#"
+              href="https://www.instagram.com/cursodeteatrodenesmelo"
               target="_blank"
               rel="noopener noreferrer"
               title="Acessar Instagram de Denes Melo"
             >
               <FaSquareInstagram className={styles.instagram}/>
-              <span>https://www.instagram.com/cursodeteatrodenesmelo/</span>
+              <span>https://www.instagram.com/cursodeteatrodenesmelo</span>
             </a>
             <a
-              href="#"
+              href="https://www.youtube.com/@cursodeteatrodenesmelo"
               target="_blank"
               rel="noopener noreferrer"
                title="Acessar YouTube de Denes Melo"

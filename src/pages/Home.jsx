@@ -11,6 +11,7 @@ import Navbar from '../components/navbar/Navbar'
 import { useEffect } from 'react';
 
 import styles from './Home.module.css'
+import Youtube from '../components/youtube/Youtube';
 
 export default function Home(){
       useEffect(() => {
@@ -42,6 +43,26 @@ export default function Home(){
             <h2 data-aos="fade-right">O teatro é a escola para a vida, trabalha todo o desenvolvimento do ser humano. Por isso existe um provérbio que diz que o mundo é um teatro.</h2>
           </section>
 
+          <section className={styles.secao_videos} id="videos">
+            <Youtube 
+            descrição="Venha conhecer o nosso curso de teatro com o Prof. Denes Melo"
+            src="https://youtube.com/embed/BmJSyU10t0w?si=dS93L9nUsbxK8_qk"
+            title="Venha conhecer o nosso curso de teatro com o Prof. Denes Melo"
+            />
+
+            <Youtube 
+            descrição="Exercícios de voz e de memorização no teatro com o Prof. Denes Melo"
+            src="https://www.youtube.com/embed/oCxW1ncxjb0?si=9dN2gkfnYXs0NIty"
+            title="Exercícios de voz e de memorização no teatro com o Prof. Denes Melo"
+            />
+           
+            <Youtube 
+            descrição="Aquecimento corporal completo no curso de teatro com o Prof. Denes Melo"
+            src="https://www.youtube.com/embed/3XnNCjiKbgQ?si=U7BVg8zxwitFGZkA"
+            title="Aquecimento corporal completo no curso de teatro com o Prof. Denes Melo"
+            />
+          </section>
+
           <div id="galeria"/>
           <section className={styles.secao_galeria}  data-aos="fade-up">
             <Galeria/>
@@ -52,9 +73,12 @@ export default function Home(){
                 <img src={logo} alt="" />
                 <p>TEL: (21) 3183-2757</p>
                 <p>www.cursodeteatrodenesmelo.com</p>
-                <a href="#">
-                  <RiWhatsappFill className={styles.whats}/>(21) 98299-6612
-                
+                <a href="https://w.app/nntyld"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   title="Enviar whats para Denes Melo"
+                >
+                  <RiWhatsappFill className={styles.whats}/>(21) 98299-6612 
                 </a>
             </div>   
           </section>
@@ -76,11 +100,10 @@ export default function Home(){
           </section>
         </main>   
            <a
-          href="#"
+          href="https://w.app/nntyld"
           target="_blank"
           rel="noopener noreferrer"
-          title="Enviar whats para Denes Melo"
-          
+          title="Enviar whats para Denes Melo" 
         >
           <RiWhatsappFill className={styles.whats_fixed}/>
         </a>
